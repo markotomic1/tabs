@@ -1,13 +1,107 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: aliceblue;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  width: 90vw;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: xx-large;
+  text-align: center;
+  padding: 0.25rem;
+  margin-bottom: 2rem;
+}
+.underline {
+  margin: 0 auto;
+  width: 5rem;
+  height: 0.25rem;
+  background: #aacae6;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.btn {
+  margin: 0 0.5rem;
+  background: transparent;
+  background-color: transparent;
+  border: 0;
+  font-size: xx-large;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #aacae6;
+  outline: none;
+}
+.active {
+  margin: 0 0.5rem;
+  background: transparent;
+  background-color: aliceblue;
+  border: 2px solid #aacae6;
+  font-size: xx-large;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  outline: none;
+}
+@media (max-width: 500px) {
+  .btn,
+  .active {
+    font-size: x-large;
+  }
+}
+.jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.jobs h3 {
+  margin-bottom: 0.25rem;
+}
+.jobs h4 {
+  margin-bottom: 0.25rem;
+  background-color: #aacae6;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color: #4ba5f5;
+}
+.date {
+  margin-bottom: 0.25rem;
+  color: #4ba5f5;
+}
+.job-desc {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.jobs-desc p {
+  text-align: left;
+}
+.icon {
+  margin: 0.5rem;
+  color: black;
+}
+.btn-end {
+  background-color: aliceblue;
+  border: 2px solid #aacae6;
+  width: 150px;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  outline: none;
+  justify-self: center;
+  align-self: center;
 }
